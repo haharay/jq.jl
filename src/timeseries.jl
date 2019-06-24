@@ -1,6 +1,6 @@
 
 
-export py2df, TimeArray, ta2df,month_diff
+export py2df, df2ta, ta2df,month_diff
 
 
 ## 把下载jq数据框转化为DataFrames.jl
@@ -28,7 +28,7 @@ function ta2df(ta::TimeArray; colnames=Symbol[], timestamp=:time)
     df
 end
 
-function TimeArray(df::DataFrames.DataFrame; colnames=Symbol[], timestamp=:time)
+function df2ta(df::DataFrames.DataFrame; colnames=Symbol[], timestamp=:time)
     if length(colnames) != 0
         df = df[vcat(timestamp, colnames)]
         colnames = Symbol.(colnames)
