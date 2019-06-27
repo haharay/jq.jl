@@ -13,7 +13,7 @@ function py2df(pydf; index::Bool=false)
     return df
 end
 
-function ta2df(ta::TimeArray; colnames=Symbol[], timestamp=:time)
+function DataFrame(ta::TimeArray; colnames=Symbol[], timestamp=:time)
     if length(colnames) != 0
         #colnames_str = [string(s) for s in colnames]
         ta = ta[colnames...]
@@ -28,7 +28,7 @@ function ta2df(ta::TimeArray; colnames=Symbol[], timestamp=:time)
     df
 end
 
-function df2ta(df::DataFrames.DataFrame; colnames=Symbol[], timestamp=:time)
+function TimeArray(df::DataFrames.DataFrame; colnames=Symbol[], timestamp=:time)
     if length(colnames) != 0
         df = df[vcat(timestamp, colnames)]
         colnames = Symbol.(colnames)
