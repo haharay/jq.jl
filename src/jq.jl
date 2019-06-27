@@ -4,7 +4,7 @@ module jq
 using PyCall
 using Dates
 import Pandas
-import DataFrames
+using DataFrames
 using TimeSeries
 import TimeSeries.TimeArray
 
