@@ -1,6 +1,6 @@
 
 
-export py2df, df2ta, ta2df,month_diff
+export py2df, DataFrame, TimeArray,month_diff
 
 
 ## 把下载jq数据框转化为DataFrames.jl
