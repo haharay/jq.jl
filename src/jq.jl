@@ -5,7 +5,7 @@ using PyCall
 using Dates
 import Pandas
 import DataFrames
-import TimeSeries
+using TimeSeries
 import TimeSeries.TimeArray
 
 include("timeseries.jl")
