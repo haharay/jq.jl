@@ -1,7 +1,7 @@
 name = "jq"
 uuid = "c981baae-22b1-11e9-36f1-2553cd71c74e"
 authors = ["rayhe "]
-version = "0.1.4"
+version = "0.1.5"
 
 [deps]
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
