@@ -17,7 +17,7 @@ const JQ = PyNULL()
 
 function __init__()
     copy!(JQ, pyimport("jqdatasdk"))
-    JQ.auth("15202875236","1qaz2wsx")
+    JQ.auth("","")
     print(JQ.get_query_count())
     #JQ[:auth]("15202875236","1qaz2wsx")
     #jq[:get_query_count]()
